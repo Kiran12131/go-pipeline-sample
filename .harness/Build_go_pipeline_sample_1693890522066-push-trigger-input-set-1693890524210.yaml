@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_go_pipeline_sample_1693890522066-push-trigger-input-set
+  identifier: Build_go_pipeline_sample_1693890522066pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: DeployAWS
+  pipeline:
+    identifier: Build_go_pipeline_sample_1693890522066
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
