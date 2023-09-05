@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_go_pipeline_sample_1693890522066-pr-trigger-input-set
+  identifier: Build_go_pipeline_sample_1693890522066prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: DeployAWS
+  pipeline:
+    identifier: Build_go_pipeline_sample_1693890522066
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
